@@ -1,0 +1,22 @@
+﻿
+@model AspNetCoreProjeRevize.Models.Birim
+
+@{
+    ViewData["Title"] = "YeniBirim";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<br />
+<form class="form-group" method="post">
+
+    <div>
+        <b>Birim Adı</b>
+        @Html.TextBoxFor(x => x.BirimAd, new { @class = "form-control" })
+
+    </div>
+
+    <br />
+
+    <button class="btn btn-info">Kaydet</button>
+
+</form>

@@ -1,0 +1,43 @@
+﻿@model AspNetCoreProjeRevize.Models.Personel
+
+@{
+    ViewData["Title"] = "PersonelGetir";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<br />
+<!--Personelguncelleyi çalışıtıran beginform-->
+@using (Html.BeginForm("PersonelGuncelle", "Personelim", FormMethod.Post))
+{
+
+    <div>
+        <b>Personel Adı</b>
+        @Html.TextBoxFor(x => x.Ad, new { @class = "form-control" })
+
+    </div>
+
+    <br />
+    <div>
+        <b>Personel Soyadı</b>
+        @Html.TextBoxFor(x => x.Soyad, new { @class = "form-control" })
+
+    </div>
+
+    <br />
+    <div>
+        <b>Şehir</b>
+        @Html.TextBoxFor(x => x.Sehir, new { @class = "form-control" })
+
+    </div>
+
+    <br />
+    <div>
+        <b>Birim</b>
+
+        @Html.DropDownListFor(x => x.Birim.BirimID, (List<SelectListItem>)ViewBag.dgr, new { @class = "form-control" })
+    </div>
+    <br />
+    <br />
+    <button class="btn btn-info">Güncelle</button>
+}
+

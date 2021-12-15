@@ -1,0 +1,27 @@
+﻿
+@model AspNetCoreProjeRevize.Models.Birim
+@{
+    ViewData["Title"] = "BirimGetir";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<br />
+<!--Departmanguncelleyi çalışıtıran beginform-->
+@using (Html.BeginForm("BirimGuncelle", "Birim", FormMethod.Post))
+{
+    <div>
+        <b>Birim ID</b>
+        @Html.TextBoxFor(x => x.BirimID, new { @class = "form-control" })
+
+    </div>
+
+    <div>
+        <b>Birim Adı</b>
+        @Html.TextBoxFor(x => x.BirimAd, new { @class = "form-control" })
+
+    </div>
+
+    <br />
+
+    <button class="btn btn-info" style="background-color:lightgreen">Birimi Güncelle</button>
+}

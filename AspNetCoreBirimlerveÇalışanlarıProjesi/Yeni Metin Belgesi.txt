@@ -1,0 +1,2 @@
+https://docs.microsoft.com/tr-tr/dotnet/api/system.security.claims.claimsprincipal?view=netcore-3.1
+https://docs.microsoft.com/tr-tr/aspnet/core/security/authentication/cookie?view=aspnetcore-3.1#:~:text=SignInAsync%20%C5%9Fifreli%20bir%20olu%C5%9Fturur%20cookie,yaln%C4%B1zca%20birka%C3%A7%20belirli%20yolda%20kullan%C4%B1l%C4%B1r
